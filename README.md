@@ -75,7 +75,7 @@ methods: {
 
 效果如下：
 
-![image-20191203115159483](C:\Users\zhaozb\AppData\Roaming\Typora\typora-user-images\image-20191203115159483.png)
+![](README.assets/image-20191203115159483.png)
 
 ## 思路分析
 

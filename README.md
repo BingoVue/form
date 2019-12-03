@@ -139,7 +139,7 @@ MyForm：表单容器，传递数据给子组件使用
 
    实现效果如下：
 
-   ![image-20191203130853018](C:\Users\zhaozb\AppData\Roaming\Typora\typora-user-images\image-20191203130853018.png)
+   ![](README.assets/image-20191203130853018.png)
 
    此处优化补充：
 
@@ -162,14 +162,14 @@ MyForm：表单容器，传递数据给子组件使用
 
    2. inheritAttrs: false：由于所有通过$attrs接收的参数都会被拼到组件根节点，所以通过这个属性去除
 
-      ![image-20191203125956553](C:\Users\zhaozb\AppData\Roaming\Typora\typora-user-images\image-20191203125956553.png)
+      ![](README.assets/image-20191203125956553.png)
 
       ```
       // MyInput.vue
       inheritAttrs: false,
       ```
 
-   ![image-20191203130105744](C:\Users\zhaozb\AppData\Roaming\Typora\typora-user-images\image-20191203130105744.png)
+   ![](README.assets/image-20191203130105744.png)
 
 #### MyFormItem.vue
 
@@ -199,7 +199,7 @@ MyForm：表单容器，传递数据给子组件使用
 
    效果如下：
 
-   ![image-20191203132622347](C:\Users\zhaozb\AppData\Roaming\Typora\typora-user-images\image-20191203132622347.png)
+   ![](README.assets/image-20191203132622347.png)
 
 #### MyForm.vue
 
@@ -320,7 +320,7 @@ MyForm：表单容器，传递数据给子组件使用
 
 效果如下：
 
-![image-20191203144028254](C:\Users\zhaozb\AppData\Roaming\Typora\typora-user-images\image-20191203144028254.png)
+![](README.assets/image-20191203144028254.png)
 
 10. 接下来还需要一个全局校验，当点击提交按钮时，做一个校验操作
 
@@ -382,7 +382,7 @@ MyForm：表单容器，传递数据给子组件使用
 
 效果如下：
 
-![image-20191203151137951](C:\Users\zhaozb\AppData\Roaming\Typora\typora-user-images\image-20191203151137951.png)
+![](README.assets/image-20191203151137951.png)
 
 14. 此时校验结果报错，原因是在执行全局校验，即遍历formitem校验时，提交按钮所处的表单项也被纳入校验，而此时按钮表单项并没有prop属性，因此报错；解决办法是过滤掉没有prop属性的表单项校验
 
@@ -395,9 +395,9 @@ MyForm：表单容器，传递数据给子组件使用
 
 效果如下：
 
-![image-20191203152504194](C:\Users\zhaozb\AppData\Roaming\Typora\typora-user-images\image-20191203152504194.png)
+![](README.assets/image-20191203152504194.png)
 
-![image-20191203152545453](C:\Users\zhaozb\AppData\Roaming\Typora\typora-user-images\image-20191203152545453.png)
+![](README.assets/image-20191203152545453.png)
 
 OK！！！，完成一个简易版的Element的Form组件，并成功实现了表单项校验及全局校验
 
